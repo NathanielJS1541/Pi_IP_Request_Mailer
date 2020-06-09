@@ -39,7 +39,7 @@ The easiest way to schedule tasks on a Raspberry Pi is to use `cron`. Simply typ
 terminal. I chose to run this script every minute, so to do this add the following line to the bottom
 of the file:
 ```
-*/q * * * * python3 /home/pi/Documents/Pi_IP_Request_Mailer/Pi_IP_Request_Mailer.py
+*/1 * * * * python3 /home/pi/Documents/Pi_IP_Request_Mailer/Pi_IP_Request_Mailer.py
 ```
 Remember to change the path to match that of your script. If you wanted the script to run every 5 minutes
 you would change `*/1` to `*/5`. If you wanted the script to run every hour the line would instead look like
