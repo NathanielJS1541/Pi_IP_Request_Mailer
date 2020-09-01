@@ -141,7 +141,7 @@ def generate_email_body():
             assigned_ip = split_line[split_line.index(b'src')+1].decode('utf-8')
             message_body += '%s has been assigned the IP: %s\n' % (interface_name, assigned_ip)  # Compose the email
 
-            return message_body
+    return message_body
 
 
 email_request_check()
